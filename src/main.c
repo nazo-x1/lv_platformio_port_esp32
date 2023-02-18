@@ -28,7 +28,7 @@
 #endif
 
 #include "lvgl_helpers.h"
-#include "examples/lv_examples.h"
+#include "demos/lv_demos.h"
 
 /*********************
  *      DEFINES
@@ -182,8 +182,7 @@ static void create_demo_application(void)
     #elif defined CONFIG_LV_USE_DEMO_MUSIC
         lv_demo_music();
     #else
-        lv_example_anim_3();
-        // #error "No demo application selected."
+        #error "No demo application selected."
     #endif
 #endif
 }
