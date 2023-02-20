@@ -94,7 +94,7 @@ static void guiTask(void *pvParameter) {
     lv_disp_drv_t disp_drv;
     lv_disp_drv_init(&disp_drv);
     disp_drv.flush_cb = disp_driver_flush;
-
+    disp_drv.full_refresh = 1;
     /* When using a monochrome display we need to register the callbacks:
      * - rounder_cb
      * - set_px_cb */
